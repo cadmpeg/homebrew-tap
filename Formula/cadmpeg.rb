@@ -1,25 +1,25 @@
 class Cadmpeg < Formula
-  desc "cadmpeg: an open-source CAD transcoder (ffmpeg for CAD). Command-line front-end."
+  desc "Inspect, convert, compare, and validate CAD files from the command line."
   homepage "https://github.com/cadmpeg/cadmpeg"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.0/cadmpeg-aarch64-apple-darwin.tar.xz"
-      sha256 "9a55da821312455eaa14e73cee2a0e5029b02f378b4a06c64dcb710fd0dd8931"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.1/cadmpeg-aarch64-apple-darwin.tar.xz"
+      sha256 "61750c28fafba9c7fa07c2cc83c8fd393d3a640c5589a0072763742595a6302a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.0/cadmpeg-x86_64-apple-darwin.tar.xz"
-      sha256 "c4f8df0658e6bf7b03a279abd6a6013cc9e60a3c109b48f4e4a1308c677930ac"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.1/cadmpeg-x86_64-apple-darwin.tar.xz"
+      sha256 "c4291699aa15f5190f32eb38f9a080b1f1c9fd83bbf67b6329f7d4e941491aaa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.0/cadmpeg-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ddba3980c74596834a67fcbd9344cb59d6b907f3119594ba87b04eb4589d724d"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.1/cadmpeg-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a0f992a58e921cc3f76b0339ae69835651058bc8145eb11268e64964f182fc5d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.0/cadmpeg-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6c7db2014ed8d0f732c349456dbcbc8d8b77c17aa50bbc2338810d8eb7b53b3b"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.1.1/cadmpeg-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5d77836cb2e1b75cab17c69bbf50fe901a3c1e655e48bc2dc0f283c7079f6d30"
     end
   end
   license "Apache-2.0"
