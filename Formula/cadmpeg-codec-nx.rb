@@ -1,25 +1,25 @@
 class CadmpegCodecNx < Formula
   desc "Read Parasolid geometry and topology from NX .prt files."
   homepage "https://github.com/cadmpeg/cadmpeg"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-nx-aarch64-apple-darwin.tar.xz"
-      sha256 "399823502f10e2fe34f36b86dbf19fb87845d2f1d0c52d3929a58e851eb7d2b0"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-nx-aarch64-apple-darwin.tar.xz"
+      sha256 "15c819caffead09adc197568ccdce401d6662708538df9c284786a337766eb28"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-nx-x86_64-apple-darwin.tar.xz"
-      sha256 "e0dd9c233cc421f4a5c0360b12076e2d44aba3e6400334d1aac113077138475f"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-nx-x86_64-apple-darwin.tar.xz"
+      sha256 "805e92bf3aac8fd15a3fd2d5fdb2797604b0c7b726167ff9d55bb6415ba650a2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-nx-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "68a49aa850884fbb5639029653b8ce14279329862411fb306975793f6f94000f"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-nx-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ee97ec9eaf214d6a5fe6995ed94b0d4b3341cbb60558cc1f02d35eb3dde92130"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-nx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3bba050f1321ede41c272a364867432a53460f2db3e65c92273986c04867ae6a"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-nx-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b5395cdeb2b7eca017aa2d85cce27dccaeeb35627a1f7d4f99810c248fe8637c"
     end
   end
   license "Apache-2.0"
