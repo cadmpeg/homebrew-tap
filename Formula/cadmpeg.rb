@@ -1,25 +1,25 @@
 class Cadmpeg < Formula
   desc "Inspect, decode, validate, compare, and convert CAD models."
   homepage "https://github.com/cadmpeg/cadmpeg"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-aarch64-apple-darwin.tar.xz"
-      sha256 "ea7a03ac4738c110e2cdac655416a7dc19840e41ecc547a8a0d886ce52bdba98"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-aarch64-apple-darwin.tar.xz"
+      sha256 "03a179b7643ab22bd17a73b469d10f6146df89cadadb30dac19660d72c96c2f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-x86_64-apple-darwin.tar.xz"
-      sha256 "d1ebaaa4cd721cdf0066f6136a2ab6b399faab2e8517d1828323e6f118501a54"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-x86_64-apple-darwin.tar.xz"
+      sha256 "241d3fbbc97f5225a9927d5303fcfe5c61770f43fc5b9d041ef58527a9d2bda2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "84488bf051e83a01ae5219b2fbc4075a3a61a0609d3cdfcd46f1a9f77d1f4cf4"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d8fd1a2246e94ca3aeb4cd0482f1975ce1e18746799286d5f1575bcaaf06d35c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "51ac59c11376279536a33288f00654777e627e96e2d1e52213ed20a2d0daedb3"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "be391c626a05f1f02b986be2e0b1152d3ec4b61eefb9942f3bf663ffe0b48387"
     end
   end
   license "Apache-2.0"
