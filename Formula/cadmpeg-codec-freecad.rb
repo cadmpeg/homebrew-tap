@@ -1,25 +1,25 @@
 class CadmpegCodecFreecad < Formula
   desc "Read and write FreeCAD FCStd document archives."
   homepage "https://github.com/cadmpeg/cadmpeg"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-freecad-aarch64-apple-darwin.tar.xz"
-      sha256 "d9f89c53727d666d907cb6f660f73a093bb34ecaeccfa7791e8890d445c63942"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-freecad-aarch64-apple-darwin.tar.xz"
+      sha256 "d4ba82b1ebaa9dd523983038cd73c18d5ab3272ae4cabb46d4f59775dcbd37fd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-freecad-x86_64-apple-darwin.tar.xz"
-      sha256 "d87828f83614e41642e7375f8b3e434ea3add4700d92fc3ad11901140d7eff64"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-freecad-x86_64-apple-darwin.tar.xz"
+      sha256 "6ef77a2a1556400a6226613f2a23f1c444fe59497312b3784ddf3f4d8783513d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-freecad-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7e108c1c42969158e1f6c228d8516b4b2f568038b1371339ad18a2d9858ae2c5"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-freecad-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "efaa99ff0a72d0f248f9abf1125fce235591714ea2aef48b2c11ab1c4f4dad26"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.3.1/cadmpeg-codec-freecad-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d1cf42df801d7e53dd9d65531df3ffe2468316bca35233431e09ec70514d86f1"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-codec-freecad-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0d20eda4b9bcf78c33c77cbc8bbcac31f1fd7f620c3d2dfbe077e7037fd75f55"
     end
   end
   license "Apache-2.0"
