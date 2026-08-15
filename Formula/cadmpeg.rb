@@ -1,25 +1,25 @@
 class Cadmpeg < Formula
   desc "Inspect, decode, validate, compare, and convert CAD models."
   homepage "https://github.com/cadmpeg/cadmpeg"
-  version "0.4.0"
+  version "0.5.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-aarch64-apple-darwin.tar.xz"
-      sha256 "03a179b7643ab22bd17a73b469d10f6146df89cadadb30dac19660d72c96c2f2"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.5.2/cadmpeg-aarch64-apple-darwin.tar.xz"
+      sha256 "3121d7dbff7674f658ca9436e38bca5edf68e1a8f54230d0d72fef404dda874b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-x86_64-apple-darwin.tar.xz"
-      sha256 "241d3fbbc97f5225a9927d5303fcfe5c61770f43fc5b9d041ef58527a9d2bda2"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.5.2/cadmpeg-x86_64-apple-darwin.tar.xz"
+      sha256 "8aab8a0e301a542026c8d52072e1620240a9f736512af0edb9d7490542642c1f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d8fd1a2246e94ca3aeb4cd0482f1975ce1e18746799286d5f1575bcaaf06d35c"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.5.2/cadmpeg-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6c775636057e7b19a4884d8c0bc945410b1d3ad73169503a7a1791a1135b8fd3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.4.0/cadmpeg-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "be391c626a05f1f02b986be2e0b1152d3ec4b61eefb9942f3bf663ffe0b48387"
+      url "https://github.com/cadmpeg/cadmpeg/releases/download/v0.5.2/cadmpeg-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "faae6203e3b5feb7e5b1a6f15ef87b6f0fdaa8e1404845169a9b3127aa7ac654"
     end
   end
   license "Apache-2.0"
@@ -48,10 +48,18 @@ class Cadmpeg < Formula
   end
 
   def install
-    bin.install "cadmpeg" if OS.mac? && Hardware::CPU.arm?
-    bin.install "cadmpeg" if OS.mac? && Hardware::CPU.intel?
-    bin.install "cadmpeg" if OS.linux? && Hardware::CPU.arm?
-    bin.install "cadmpeg" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "cadmpeg"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "cadmpeg"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "cadmpeg"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "cadmpeg"
+    end
 
     install_binary_aliases!
 
